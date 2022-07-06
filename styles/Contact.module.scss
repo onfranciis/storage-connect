@@ -1,0 +1,299 @@
+@import "Theme";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Navbar {
+  background-color: $primary;
+  color: white;
+  padding: 30px 10px;
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 150px;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    .LogoParent {
+      min-width: 200px;
+      // background-color: red;
+      cursor: pointer;
+
+      .logo {
+        font-weight: 700;
+        font-size: 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+
+      p {
+        margin-top: -7px;
+      }
+    }
+
+    .Links {
+      width: fit-content;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px 40px;
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .contact {
+        background-color: $secondary;
+        color: $buttonBlue;
+        border-radius: 5px;
+        padding: 8px 18px;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  .contactUs {
+    width: 100%;
+    background-color: #f6f8fd;
+    background-image: url("/transparentCitySilouette.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 86px 0;
+
+    h2 {
+      color: #2f2f2f;
+      font-weight: 600;
+      font-size: 40px;
+    }
+
+    p {
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+
+  .form {
+    margin: 50px auto;
+    form {
+      //   background-color: green;
+      width: auto;
+      border: 1px solid #cdd4e7;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      accent-color: transparent;
+      padding: 53px 70px;
+
+      input {
+        height: 64px;
+        max-width: 563px;
+        background-color: #f6f8fd;
+        background-repeat: no-repeat;
+        background-position-x: 20px;
+        background-position-y: center;
+        color: $paragraphText;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        padding: 22px 42px;
+      }
+
+      .formMessage {
+        height: 165px;
+        max-width: 563px;
+        background-color: #f6f8fd;
+        background-repeat: no-repeat;
+        background-position-x: 20px;
+        background-position-y: center;
+        color: $paragraphText;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        padding: 22px;
+
+        &:focus {
+          background-color: transparent;
+          border: 1px solid $primary;
+        }
+      }
+
+      .formUser {
+        background-image: url("/user.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/userFilled.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formPhone {
+        background-image: url("/phone.png");
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/phoneFilled.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formEmail {
+        background-image: url("/email.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/emailFilled.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .submit {
+        button {
+          width: 100%;
+          background-color: $primary;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          border: none;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          cursor: pointer;
+          padding: 20px 30px;
+
+          p {
+            margin-top: -6px;
+          }
+
+          .image {
+            min-height: 18.62px;
+            min-width: 16px;
+          }
+
+          &:hover {
+            background-color: #0d369c;
+          }
+        }
+      }
+    }
+  }
+
+  //   @media screen and (max-width: 750px) {
+  //     form {
+  //       padding: 10px;
+  //       background-color: red;
+  //     }
+  //   }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              INQUIRY COMPONENT                             */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Inquiry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+
+  .title {
+    color: rgba(33, 33, 33, 1);
+    font-weight: 600;
+    font-size: 30px;
+    margin: 39px 0 18px;
+  }
+
+  .body {
+    color: rgba(55, 55, 55, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    button {
+      background-color: transparent;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 15px 30px;
+    }
+
+    .listings {
+      background-color: $primary;
+      color: white;
+      font-weight: 600;
+    }
+    .home {
+      color: rgba(2, 24, 80, 1);
+      font-weight: 400;
+      border-color: rgba(151, 151, 151, 1);
+      border-width: 1px;
+      border-style: solid;
+    }
+  }
+}
