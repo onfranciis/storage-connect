@@ -1,0 +1,274 @@
+@import "Theme.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                    LEARN                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Learn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+
+  .learn {
+    width: 100%;
+    background-color: #f6f8fd;
+    background-image: url("/transparentCitySilouette.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 86px 0;
+
+    h2 {
+      color: #2f2f2f;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    p {
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  PAGINATE                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.paginateParent {
+}
+
+.Paginate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 57px 45px 40px;
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .navButton {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 5px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .first {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .prev {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .next {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .last {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.paginateBody {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     TAB                                    */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Tab {
+  // width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 TAB HEADING                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+.TabHeadingParent {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  overflow: scroll;
+  border-bottom: 2px solid rgba(151, 151, 151, 1);
+  cursor: pointer;
+}
+
+.TabHeading {
+  width: fit-content;
+  // background-color: red;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  align-items: center;
+  // gap: 50px;
+  padding: 0 50px;
+  flex: 1;
+  // overflow: scroll;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 TAB BUTTONS                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.TabButtons {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  white-space: nowrap;
+  flex: 1;
+  padding: 10px 0 0;
+  margin: 0 10px;
+
+  .text {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 30px;
+  }
+
+  .marker {
+    height: 5px;
+    width: 100%;
+    background-color: $primary;
+    border-radius: 50px 50px 10px 10px;
+  }
+}
