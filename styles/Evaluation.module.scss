@@ -1,0 +1,292 @@
+@import "Theme.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                               FREE EVALUATION                              */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Evaluation {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  .Get {
+    width: 100%;
+    background-color: #f6f8fd;
+    background-image: url("/transparentCitySilouette.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 86px 0;
+
+    h2 {
+      color: #2f2f2f;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    p {
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  .article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 100px 20px;
+
+    .imageParent {
+      //   min-width: 450.4px;
+      //   max-width: 450.4px;
+      //   min-height: 363.99px;
+      //   max-height: 363.99px;
+    }
+    .body {
+      width: 100%;
+      max-width: 715px;
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      .title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .LetUsKnow {
+    background-image: url("/SecondSectionBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 74px 20px 0;
+
+    p {
+      width: 100%;
+      max-width: 994px;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      margin: 0 auto;
+    }
+  }
+
+  .form {
+    width: 100%;
+    form {
+      background-color: white;
+      width: fit-content;
+      border: 1px solid #cdd4e7;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      accent-color: transparent;
+      padding: 53px 70px;
+      margin: 60px auto;
+
+      .sections {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+      }
+
+      .section {
+        width: auto;
+        // border: 1px solid #cdd4e7;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        accent-color: transparent;
+        // padding: 53px 70px;
+
+        p {
+          color: $paragraphText;
+          font-weight: 600;
+          font-size: 25px;
+          text-align: left;
+        }
+      }
+
+      input {
+        height: 64px;
+        width: 100%;
+        max-width: 563px;
+        background-color: #f6f8fd;
+        background-repeat: no-repeat;
+        background-position-x: 20px;
+        background-position-y: center;
+        color: $paragraphText;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        padding: 22px 42px;
+      }
+
+      .formUser {
+        background-image: url("/user.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/userFilled.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formPhone {
+        background-image: url("/phone.png");
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/phoneFilled.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formEmail {
+        background-image: url("/email.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/emailFilled.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formAddress {
+        background-image: url("/locationFade.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/locationBlue.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formUnits {
+        background-image: url("/BuildingFade.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/unitsBlue.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formOccupancy {
+        background-image: url("/PeopleFade.png"), url("/percentFade.png");
+        background-position-x: 20px, right 20px;
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/peopleBlue.png"), url("/percentBlue.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .formFeet {
+        background-image: url("/frameFade.png");
+        padding-left: 48px;
+
+        &:focus {
+          background-color: transparent;
+          background-image: url("/frameBlue.png");
+          border: 1px solid $primary;
+        }
+      }
+
+      .notice {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          color: $paragraphText;
+          font-weight: 400;
+          font-size: 18px;
+          text-align: unset;
+        }
+      }
+
+      .submit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        button {
+          width: 100%;
+          max-width: 418px;
+          background-color: $primary;
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          border: none;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          cursor: pointer;
+          padding: 20px 30px;
+
+          p {
+            width: fit-content;
+            margin: -6px 0 0 0;
+          }
+
+          .image {
+            min-height: 18.62px;
+            min-width: 16px;
+            max-width: 16px;
+          }
+
+          &:hover {
+            background-color: #0d369c;
+          }
+        }
+      }
+    }
+  }
+}
