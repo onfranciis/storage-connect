@@ -1,0 +1,570 @@
+@import "Theme";
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   LISTING                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.SecondSection {
+  // padding: 0 10px;
+
+  .heading {
+    background-color: #f6f8fd;
+    background-image: url("/transparentCitySilouette.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 70px;
+
+    h2 {
+      color: $buttonBlue;
+      font-weight: 600;
+      font-size: 35px;
+      margin: 70px 0 50px;
+    }
+
+    p {
+      max-width: 769px;
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .main {
+    height: auto;
+    // background-image: url("/SecondSectionBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 30px;
+
+    .viewMore {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        height: 80px;
+        width: 364px;
+        background-color: $secondary;
+        color: $paragraphText;
+        font-weight: 600;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 78px auto 93px;
+
+        &:hover {
+          background-color: #f4c52c;
+        }
+      }
+    }
+  }
+
+  .formParent {
+    height: fit-content;
+    // width: 100%;
+    // background-color: green;
+    position: relative;
+    margin-top: -80px;
+  }
+
+  .form {
+    width: auto;
+    max-width: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.615));
+    padding: 34px;
+    margin: 0px auto -100px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px 90px;
+    accent-color: $primary;
+
+    p {
+      font-size: 20px;
+      color: $paragraphText;
+      margin-bottom: 15px;
+    }
+
+    input {
+      height: 60px;
+      width: 200px;
+      background-color: transparent;
+      border: 1px solid #d9d9d9;
+      border-radius: 10px;
+      padding-left: 38px;
+
+      &::placeholder {
+        color: rgba(151, 151, 151, 0.7);
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .inputsLocation {
+      width: 418px;
+      background-image: url("/LocationFade.png");
+      background-repeat: no-repeat;
+      background-position-x: 14px;
+      background-position-y: center;
+    }
+
+    .inputsUnitCount {
+      background-image: url("/BuildingFade.png");
+      background-repeat: no-repeat;
+      background-position-x: 14px;
+      background-position-y: center;
+      padding-left: 44px;
+    }
+
+    .inputsOccupancy {
+      background-image: url("/PeopleFade.png");
+      background-repeat: no-repeat;
+      background-position-x: 14px;
+      background-position-y: center;
+      padding-left: 46px;
+    }
+
+    .inputsSearch {
+      height: 60px;
+      width: 148px;
+      background-color: $secondary;
+      background-image: url("/Search.png");
+      background-repeat: no-repeat;
+      background-position-x: 24px;
+      background-position-y: center;
+      color: $paragraphText;
+      font-weight: 400px;
+      font-size: 20px;
+      padding-left: 30px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f4c52c;
+      }
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                   LISTING TAB COMPONENT FOR LISTINGS PAGE                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.ListingTab {
+  width: auto;
+  background-color: #f6f8fd;
+  color: $paragraphText;
+  max-width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 140px;
+  padding: 29px 55px;
+  margin: 0px auto 20px;
+
+  .views {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 43px;
+
+    button {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+      }
+
+      p {
+        font-size: 20px;
+        margin-top: -5px;
+      }
+    }
+  }
+
+  .notification {
+    background: $primary;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 23.5px;
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      margin-top: -5px;
+    }
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    .sort {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: -5px;
+      }
+    }
+
+    select {
+      height: 55px;
+      width: 182px;
+      background-color: white;
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 17px 25px;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                             NOTIFICATION POP UP                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+.NotificationPopUp {
+  height: 100%;
+  width: 100%;
+  background-color: #000b27b3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+
+  .mainParent {
+    height: fit-content;
+    width: 100%;
+    max-height: fit-content;
+    max-width: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 70px;
+    padding: 0 0 45px 0;
+    animation: popUp 0.2s linear 0s 1;
+  }
+
+  .closeParent {
+    // width: 100%;
+    // background-color: red;
+    align-self: flex-end;
+    padding: 20px 20px 0 0;
+  }
+
+  .close {
+    max-height: 35px;
+    max-width: 35px;
+    background: transparent;
+    border: none;
+    // position: absolute;
+    // top: 20px;
+    // right: 30px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .main {
+    // height: fit-content;
+    // width: fit-content;
+    // height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // position: relative;
+    padding: 0 81px;
+
+    p {
+      width: 100%;
+      max-width: 442px;
+      color: $paragraphText;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      margin: 19.85px 0 41px;
+    }
+
+    form {
+      height: 100%;
+      width: 100%;
+      max-width: 442px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      gap: 25px;
+
+      input[type="email"] {
+        height: 65px;
+        width: 100%;
+        background-color: rgba(246, 248, 253, 1);
+        background-image: url("/email2.png");
+        background-repeat: no-repeat;
+        background-position-x: 19px;
+        background-position-y: center;
+        color: #a1a6b1;
+        font-weight: 400;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        padding-left: 47px;
+        padding-right: 10px;
+      }
+
+      button {
+        height: 65px;
+        width: 100%;
+        background-color: $secondary;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        p {
+          width: fit-content;
+          color: $paragraphText;
+          font-weight: 600;
+          font-size: 18px;
+          padding: 0;
+          margin: 0;
+        }
+
+        .image {
+          padding: 0;
+          margin: 0;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  @keyframes popUp {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  PAGINATE                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.paginateParent {
+}
+
+.Paginate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 45px;
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .navButton {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 5px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .first {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .prev {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .next {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .last {
+    min-height: 40px;
+    min-width: 40px;
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.paginateBody {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
