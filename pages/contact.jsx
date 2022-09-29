@@ -43,56 +43,58 @@ const Contact = () => {
 
       <Navbar />
 
-      <div className={styles.contactUs}>
-        <h2>Contact us</h2>
-        <p>Let us know what we can help you with</p>
-      </div>
-
       {submitted ? (
         <Inquiry />
       ) : (
-        <div className={styles.form}>
-          <form action="" onSubmit={handleForm}>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="John Doe"
-              className={styles.formUser}
-            />
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder="Number"
-              className={styles.formPhone}
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email address"
-              className={styles.formEmail}
-            />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Your Message..."
-              className={styles.formMessage}
-            ></textarea>
+        <>
+          <div className={styles.contactUs}>
+            <h2>Contact us</h2>
+            <p>Let us know what we can help you with</p>
+          </div>
 
-            <div className={styles.submit}>
-              <button>
-                <p>Send Message</p>
-                <div className={styles.image}>
-                  <Image src="/Send.png" alt="" height={18.62} width={16} />
-                </div>
-              </button>
-            </div>
-          </form>
-        </div>
+          <div className={styles.form}>
+            <form action="" onSubmit={handleForm}>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                className={styles.formUser}
+              />
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Number"
+                className={styles.formPhone}
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                className={styles.formEmail}
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your Message..."
+                className={styles.formMessage}
+              ></textarea>
+
+              <div className={styles.submit}>
+                <button>
+                  <p>Send Message</p>
+                  <div className={styles.image}>
+                    <Image src="/Send.png" alt="" height={18.62} width={16} />
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </>
       )}
 
       <Footer />
