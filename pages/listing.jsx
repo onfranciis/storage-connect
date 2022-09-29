@@ -9,6 +9,7 @@ import ListingTab from "../components/allListing/ListingTab";
 import NotificationPopUp from "../components/allListing/NotificationPopUp";
 import { useState } from "react";
 import Paginate from "../components/allListing/Paginate";
+import Head from "next/head";
 
 const Listing = () => {
   const [view, setView] = useState("Grid");
@@ -22,6 +23,28 @@ const Listing = () => {
 
   return (
     <div className={styles.Listing}>
+      <Head>
+        <title>Active Listings - StorageConnect</title>
+        <meta name="description" content="" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+      </Head>
       <Navbar Highlighted="Active Listings" />
 
       <div className={styles.SecondSection}>

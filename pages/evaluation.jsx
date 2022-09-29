@@ -4,6 +4,7 @@ import Navbar from "../components/contactUs/Navbar";
 import Image from "next/image";
 import Footer from "../components/home/Footer";
 import Inquiry from "../components/contactUs/Inquiry";
+import Head from "next/head";
 
 const Evaluation = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -15,6 +16,29 @@ const Evaluation = () => {
 
   return (
     <div className={styles.Evaluation}>
+      <Head>
+        <title>Free Evaluation - StorageConnect</title>
+        <meta name="description" content="" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+      </Head>
+
       <Navbar Highlighted="Free Evaluation" />
 
       {submitted ? (
