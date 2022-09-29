@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "../../styles/Learn.module.scss";
+import { DATA } from "../dynamicPost/MiniDetailsData";
 import MinimalCardWithLittleDetails from "../home/MinimalCardWithLittleDetails";
-import { DATA } from "./DATA4";
+// import { DATA } from "./DATA4";
 const Input = DATA;
 
 export default function OperatingASelfStorage(props) {
@@ -24,6 +25,7 @@ export default function OperatingASelfStorage(props) {
         } ago`}
         Title={data.location}
         Image={data.image}
+        ID={data.id}
       />
     ));
   };

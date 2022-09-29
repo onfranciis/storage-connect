@@ -28,7 +28,7 @@ const DynamicPost = ({ Data }) => {
         </div>
 
         <div className={styles.body1}>
-          <p className={styles.body1Title}>Heading Text Here</p>
+          <p className={styles.body1Title}>{Data.location}</p>
           <p className={styles.body1Body}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor
             sapien sagittis maecenas tincidunt. Quis pretium ornare id diam amet

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "../../styles/Learn.module.scss";
 import MinimalCardWithLittleDetails from "../home/MinimalCardWithLittleDetails";
-import { DATA } from "./DATA2";
+// import { DATA } from "./DATA2";
+import { DATA } from "../dynamicPost/MiniDetailsData";
 const Input = DATA;
 
 export default function BuyingASelfStorage(props) {
@@ -24,6 +25,7 @@ export default function BuyingASelfStorage(props) {
         } ago`}
         Title={data.location}
         Image={data.image}
+        ID={data.id}
       />
     ));
   };
