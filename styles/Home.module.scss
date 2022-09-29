@@ -12,14 +12,10 @@
 
 .Header {
   background-color: $primary;
-  background-image: url("/HomeHeaderBackground2.png");
-  //   background: url("/HomeHeaderBackground.png"),
-  //     linear-gradient(
-  //       135deg,
-  //       rgba(24, 73, 198, 0.9) 50.54%,
-  //       rgba(24, 73, 198, 0) 85.02%
-  //     );
-  //   background-blend-mode: overlay;
+  // background-image: url("/HomeHeaderBackground2.png");
+  background: url("/HomeHeaderBackground.png"),
+    linear-gradient(135deg, rgb(0, 60, 210) 50.54%, rgba(24, 73, 198, 0) 85.02%);
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
