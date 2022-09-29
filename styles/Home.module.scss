@@ -112,11 +112,13 @@
       .sell {
         background-color: $secondary;
         color: $buttonBlue;
+        cursor: pointer;
       }
 
       .active {
         background-color: $white;
         color: $paragraphText;
+        cursor: pointer;
       }
     }
   }

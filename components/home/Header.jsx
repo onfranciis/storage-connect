@@ -51,10 +51,10 @@ const Header = () => {
           doloremque sapiente vel voluptatem expedita iste accusamus.
         </p>
         <div className={styles.buttons}>
-          <Link href="">
+          <Link href="/sell">
             <p className={styles.sell}>Sell Your Self Storage</p>
           </Link>
-          <Link href="">
+          <Link href="/listing">
             <p className={styles.active}>Active Self Storage Listings</p>
           </Link>
         </div>
