@@ -67,7 +67,9 @@ const MinimalCard = (props) => {
         </div>
       </div>
       <div style={MinimalCardStyle1.buttonParent}>
-        <button style={MinimalCardStyle1.button}>View More Detail</button>
+        <Link href={`/post/${props.ID}`}>
+          <button style={MinimalCardStyle1.button}>View More Detail</button>
+        </Link>
       </div>
     </div>
   ) : (
@@ -145,7 +147,9 @@ const MinimalCard = (props) => {
         </div>
 
         <div style={MinimalCardStyle2.buttonParent}>
-          <button style={MinimalCardStyle2.button}>View More Detail</button>
+          <Link href={`/post/${props.ID}`}>
+            <button style={MinimalCardStyle2.button}>View More Detail</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import styles from "../../styles/Listing.module.scss";
+import { DATA } from "../dynamicPost/MiniDetailsData";
 import MinimalCard from "../home/MinimalCard";
-import { DATA } from "./DATA";
+// import { DATA } from "./DATA";
 const Input = DATA;
 
 export default function Paginate(props) {
-  const pageView = 4;
+  const pageView = 6;
   const [pageCount, setPageCount] = useState(0);
   const pages = Input.slice(pageCount, pageCount + pageView);
   const numberOfPages = Math.ceil(Input.length / pageView);
@@ -22,6 +23,7 @@ export default function Paginate(props) {
         Occupancy={data.occupancy}
         Location={data.location}
         Pic={data.image}
+        ID={data.id}
       />
     ));
   };
