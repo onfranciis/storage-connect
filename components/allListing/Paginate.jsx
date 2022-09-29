@@ -110,6 +110,37 @@ export default function Paginate(props) {
       >
         {returnData()}
       </div>
+
+      <div className={styles.Paginate}>
+        <p></p>
+        <div className={styles.right}>
+          <button
+            className={styles.prev}
+            onClick={() => {
+              if (pageCount > 0) {
+                setPageCount(pageCount - pageView);
+              }
+            }}
+            style={{ opacity: pageCount == 0 ? "0.5" : "1" }}
+          >
+            <p>{"<"}</p>
+          </button>
+
+          <div className={styles.buttons}>{pageNumber()}</div>
+
+          <button
+            className={styles.next}
+            onClick={() => {
+              if (pageCount + pageView < Input.length) {
+                setPageCount(pageCount + pageView);
+              }
+            }}
+            style={{ opacity: pageCount == Input.length - 1 ? "0.5" : "1" }}
+          >
+            <p>{">"}</p>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

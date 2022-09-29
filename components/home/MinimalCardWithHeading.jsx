@@ -72,9 +72,11 @@ const MinimalCardWithHeading = (props) => {
         </div>
       </div>
       <div style={MinimalCardWithHeadingStyle.buttonParent}>
-        <button style={MinimalCardWithHeadingStyle.button}>
-          View More Detail
-        </button>
+        <Link href={`/post/${props.ID}`}>
+          <button style={MinimalCardWithHeadingStyle.button}>
+            View More Detail
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -112,6 +114,7 @@ const MinimalCardWithHeadingStyle = {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
+    gap: 10,
     padding: "0 10px",
   },
   mainItem: {

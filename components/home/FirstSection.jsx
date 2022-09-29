@@ -10,6 +10,7 @@ import "swiper/css/scrollbar";
 import styles from "../../styles/Home.module.scss";
 import MinimalCard from "./MinimalCard";
 import MinimalCardWithHeading from "./MinimalCardWithHeading";
+import { DATA } from "../dynamicPost/MiniDetailsData";
 
 const FirstSection = () => {
   return (
@@ -25,7 +26,7 @@ const FirstSection = () => {
       <div className={styles.cards}>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={0}
+          // spaceBetween={10}
           slidesPerView={1}
           centeredSlides={true}
           centerInsufficientSlides={true}
@@ -34,27 +35,40 @@ const FirstSection = () => {
           loop={true}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          breakpoints={{
+            1450: {
+              slidesPerView: 3,
+              spaceBetween: 8,
+            },
+            720: {
+              slidesPerView: 2,
+              spaceBetween: 6,
+            },
+            540: {
+              slidesPerView: 1,
+              spaceBetween: 4,
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 2,
+            },
+          }}
         >
-          <SwiperSlide>
-            <MinimalCard
-              Pic="/unsplash_OpV94f2edwE.png"
-              Location="Jersey City, NJ"
-              Units="89"
-              Occupancy="50"
-              Size="40,233"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <MinimalCardWithHeading
-              Pic="/unsplash_-BQBmDlDE70.png"
-              Location="Jersey City, NJ"
-              Units="89"
-              Occupancy="50"
-              Size="40,233"
-              Heading="Heading of this Self Storage"
-            />
-          </SwiperSlide>
+          {DATA.slice(0, 6).map((data) => (
+            <SwiperSlide key={data.id}>
+              <MinimalCardWithHeading
+                Pic={data.image}
+                Location={data.location}
+                Units={data.units}
+                Occupancy={data.occupancy}
+                Size={data.size}
+                Heading="Heading of this Self Storage"
+                ID={data.id}
+              />
+            </SwiperSlide>
+          ))}
+          {/* 
+          
 
           <SwiperSlide>
             <MinimalCardWithHeading
@@ -97,7 +111,7 @@ const FirstSection = () => {
               Size="40,233"
               Heading="Heading of this Self Storage"
             />
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
